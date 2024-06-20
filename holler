@@ -1,4 +1,41 @@
-a = input("What is b? ")
-b = float(a)
--b = b * int(-1)
-print(-b)
+bee = input("What is b? ")
+b = float(bee)
+
+bsq = float(b * b)
+
+ay = input("What is a? ")
+a = float(ay)
+
+cee = input("What is c? ")
+c = float(cee)
+
+ac = float(a * c)
+
+fac =  float(4 * ac)
+
+ta = float(2 * a)
+
+bsqmfac = float(bsq - fac)
+
+pw = pow(bsqmfac, .5)
+
+n1 = float(-b + pw)
+
+x1 = float(n1 / ta)
+
+n2 = float(-b - pw)
+
+x2 = float(n2 / pw)
+
+def is_positive(number):
+  if number > 0:
+    return True
+  else:
+    return False
+
+
+if is_positive(bsqmfac):
+  print("x=", x1, " or", " x=", x2)
+else:
+  print("invalid")
+  
