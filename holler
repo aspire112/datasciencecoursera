@@ -24,7 +24,6 @@ def is_negative(number):
 
 if is_negative(bsqmfac):
   print("invalid - discriminant is negative, cannot calculate the square root of a negative number")
-
 else:
   pw = pow(bsqmfac, .5)
   en1 = (-b + pw)
