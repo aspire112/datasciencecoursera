@@ -14,7 +14,7 @@ def is_negative(number):
     return True
     return False
 if is_negative(bsqmfac):
-  print("invalid - discriminant is negative, cannot calculate the square root of a negative number")
+  print("imaginary number!")
 else:
   pw = pow(bsqmfac, .5)
   en1 = (-b + pw)
@@ -24,4 +24,3 @@ else:
   n2 = float(en2)
   x2 = float(n2 / pw)
   print("x=", x1, " or", " x=", x2)
-  
