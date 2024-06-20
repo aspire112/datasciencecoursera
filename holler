@@ -1,0 +1,4 @@
+a = input("What is b? ")
+b = float(a)
+-b = b * int(-1)
+print(-b)
