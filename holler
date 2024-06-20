@@ -17,25 +17,21 @@ ta = float(2 * a)
 
 bsqmfac = float(bsq - fac)
 
-pw = pow(bsqmfac, .5)
-
-n1 = float(-b + pw)
-
-x1 = float(n1 / ta)
-
-n2 = float(-b - pw)
-
-x2 = float(n2 / pw)
-
-def is_positive(number):
-  if number > 0:
+def is_negative(number):
+  if number < 0:
     return True
-  else:
     return False
 
+if is_negative(bsqmfac):
+  print("invalid - discriminant is negative, cannot calculate the square root of a negative number")
 
-if is_positive(bsqmfac):
-  print("x=", x1, " or", " x=", x2)
 else:
-  print("invalid")
+  pw = pow(bsqmfac, .5)
+  en1 = (-b + pw)
+  n1 = float(en1)
+  x1 = float(n1 / ta)
+  en2 = (-b - pw)
+  n2 = float(en2)
+  x2 = float(n2 / pw)
+  print("x=", x1, " or", " x=", x2)
   
