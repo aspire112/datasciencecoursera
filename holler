@@ -1,27 +1,18 @@
 bee = input("What is b? ")
 b = float(bee)
-
 bsq = float(b * b)
-
 ay = input("What is a? ")
 a = float(ay)
-
 cee = input("What is c? ")
 c = float(cee)
-
 ac = float(a * c)
-
 fac =  float(4 * ac)
-
 ta = float(2 * a)
-
 bsqmfac = float(bsq - fac)
-
 def is_negative(number):
   if number < 0:
     return True
     return False
-
 if is_negative(bsqmfac):
   print("invalid - discriminant is negative, cannot calculate the square root of a negative number")
 else:
